@@ -1,1 +1,230 @@
-# Drosophila_fatbody_viruses
+# Nora and Drosophila A virus tropism and host gene expression during infection at single-cell resolution in the _Drosophila_ fat body.
+
+Scripts Available:
+
+1_cpm_of_NV_DAV_in_different_treatments.R
+
+- Nora and Drosophila A virus reads (CPM, counts per million) in different replicates of the snRNA-sequencing experiment in the fat body.
+- Figure 1a, Supplementary figure S1.
+
+2_cell_type_cluster_NV_DAV_tropism_with_infection_percentage_in_cell_types.R
+
+- Nora and Drosophila A virus tropism in fat body cell types.
+- Percentage of infected cells in mated and virgin flies in Nora and Drosophila A virus infection.
+- Nora and Drosophila A virus tropism in fat body cell types in all the replicates of virgin and mated flies separately.
+- Nora virus tropism across various fat body cell types at different viral titer cutoff.
+- Drosophila A virus tropism in different cell types of fat body at different viral titer cutoff.
+- UMAP-based comparison of differentially expressed genes between uninfected and Nora virus infected flies (virgin) in the fat body.
+- UMAP-based comparison of differentially expressed gene (DEGs) expression between uninfected and DAV infected cells in mated flies.
+- Figure 1c, d, e and Figure 2a, Supplementary figure S3, S4, S5, S15, S17.
+
+3_viral_counts_in_cell_types_by_treatment.R
+
+- Viral normalized read counts in mated and virgin flies in Nora and Drosophila A virus infection.
+- Figure 2b.
+
+4_differential_gene_expression_analysis_of_NV_infection_in_virgin_flies.R
+
+- Differentially expressed gene (DEG) analysis during viral infection in the fat body.
+- Volcano plot of differentially expressed genes during Nora (virgin) infection.
+- Gene ontology (GO) enrichment analysis of differentially expressed genes in virgin flies in Nora virus infection.
+- Differentially expressed immune genes in virgin flies in Nora virus infection.
+- Figure 4a, Supplementary figure S13, S14.
+
+4.1_NV_DEG_meanCounts_uninf_vs_inf_virgin_Replicate2.R
+
+- Mean counts of differentially expressed genes (identified using method 1) in Nora virus uninfected versus infected cells, analyzed exclusively in Nora virus infected virgin flies (replicate 2).
+- Supplementary figure S16.
+
+5.1_differential_gene_expression_analysis_of_DAV_and_NV_infection_in_mated_flies.R
+
+- Volcano plot of differentially expressed genes during Drosophila A virus (mated) infection.
+- Gene ontology (GO) enrichment analysis of differentially expressed genes in mated flies in Drosophila A virus infection.
+- Differentially expressed immune genes in mated flies during Drosophila A virus infection.
+- Volcano plot of differentially expressed genes during Nora virus infection in mated flies.
+- Differentially expressed immune genes in mated flies in Nora virus infection.
+- Gene ontology (GO) enrichment analysis of differentially expressed genes in mated flies in Nora virus infection.
+- Figure 4b, Supplementary figure S18, S19, S22, S23, S24.
+
+5.2_Toll_pathway_in_viral_infection_in_mated_flies.R
+
+- Mean counts of Toll pathway genes in Nora and Drosophila A virus infection in mated flies.
+- Figure 4c.
+
+6.1_interaction_main_three_fatbody_virgin_flies.R
+
+- Cell type-specific expression changes of immune-related genes in the fat body, measured as log₂ fold changes in gene expression associated with Nora virus infection (infected vs. uninfected) across different cell types (virgin flies).
+- Gene ontology (GO) enrichment analysis of interaction effect (cell type by virus effect) genes in virgin flies in Nora virus infection.
+- Figure 5a, Supplementary figure S25.
+
+6.2_interaction_main_three_fatbody_mated_flies.R
+
+- Cell type-specific expression changes of immune-related genes in the fat body, measured as log₂ fold changes in gene expression associated with Nora and Drosophila A virus infection (infected vs. uninfected) across different cell types (mated flies).
+- Gene ontology (GO) enrichment analysis of interaction effect (cell type by virus effect) genes in mated flies in Drosophila A virus infection.
+- Figure 5b, Supplementary figure S26.
+
+7.1_TE_dysregulation_in_viral_infection_virgin_flies.R
+
+- Mean counts data of TE, piRNA, and RNAi pathway genes in Nora virus uninfected and infected cells in virgin flies.
+
+7.2_TE_dysregulation_in_viral_infection_mated_flies.R
+
+- Mean counts data of TE, piRNA, and RNAi pathway genes in virus uninfected cells and Nora virus and Drosophila A virus infected mated flies.
+
+7.3_TE_dysregulation_plots.R
+
+- Transcriptional changes of TEs and piRNA pathway genes during Nora virus infection in the fat body.
+- Transcriptional changes of TEs and piRNA pathway genes associated with Drosophila A virus infection in the fat body.
+- Mean counts of flamenco (long noncoding RNA) gene in Nora virus infection in virgin flies.
+- Mean counts of RNAi pathway genes in Nora and Drosophila A virus infection.
+- This script uses the data generated by 7.1 and 7.2 for plotting.
+- Figure 6, 7, Supplementary figure 27, 28.
+
+8_depth_plot_NV_DAV_in_virgin_mated_flies.R
+
+- Depth at each Nora and Drosophila A virus genomic position across different conditions and replicates.
+- Supplementary figure S2.
+
+9_probability_of_infection_fatbody_cell_types.R
+
+- Infection probability of fat body cell types.
+- Supplementary figure S6.
+
+10_probability_of_coinfection.R
+
+- Coinfection probability of Nora and Drosophila A virus in fat body cells
+- Supplementary figure S7.
+
+11_expression_comparison_of_NV_and_DAV_in_cell_types_and_NV_expression_comparison_between_virgin_and_mated_flies.R
+
+- Comparison of Nora and Drosophila A virus normalized reads (viral mRNA) in whole fat body tissue in mated flies.
+- Comparison of Nora and Drosophila A virus normalized reads (viral RNA) in fat body cell types in mated flies.
+- Comparison of Nora virus normalized reads (viral RNA) in fat body tissue between mated and virgin flies.
+- Comparison of Nora virus normalized reads (viral RNA) in fat body cell types between mated and virgin flies.
+- Supplementary figure S8, S9, S10, S11.
+
+12_correlation_between_percentage_of_infected_cells_vs_expression.R
+
+- Relationship between the percentage of infected cells with viral titer in the fat body.
+- Supplementary figure S12.
+
+13_read_counts_of_genes.R
+
+- Changes in IMD pathway genes during Nora and Drosophila A virus infection in virgin and mated flies.
+- Changes in Toll pathway genes during Nora virus infection in virgin files.
+- Supplementary figure S20, S21.
+
+14_commands_to_generate \_single_cell_count_matrix
+
+- Finding viruses in the Gupta et.al, (2022) study samples.
+- Making the reference genome by adding detected virus genome to Drosophila genome to get viral and host gene expression count.
+- Making reference genome that can be used by cellranger. This will be used as "transcriptome" in the cellranger.
+- General command to get count matrix for each sample. Run these for each sample of Gupta et.al., (2022) study.
+- Download TE annotation file for Drosophila
+- Getting TE counts by processing bam files produced by cellranger. Do it for bam flies of each sample.
+
+Data:
+
+combined_counts_all_treatments_VU_VI_MU_MI
+
+- scRNA-seq count matrix of all replicates and treatments from the Gupta et.al., (2022) study. Counts for virgin uninfected (VU), virgin bacterial infected (VI), mated uninfected (MU), mated bacterial infected (MI) are merged together.
+
+combined_mated_bacterial_uninfected_MU
+
+- scRNA-seq counts for mated bacterial uninfected (MU) flies. Contains two replicates.
+
+combined_virgin_bacterial_uninfected_VU
+
+- scRNA-seq counts for virgin bacterial uninfected (VU) flies. Contains two replicates.
+
+count_data_of \_TE_piRNA.xlsx
+
+- Normalized count data of TE and piRNA pathway genes.
+
+DEGs_DAV_NV_mated_condition.xlsx
+
+- Results of differential gene expression analysis of Drosophila A and Nora virus infection in mated flies.
+
+DEGs_VU1_vs_VU2.xlsx
+
+- Results of differential gene expression analysis of Nora virus infection in virgin flies.
+
+dm6.fa.gz
+
+- _Drosophila melanogaster_ reference genome assembly (dm6).
+
+dm6.refGene.gtf.gz
+
+- Annotation file corresponding to the dm6 reference genome.
+
+Drosophila_Viruses.fas.gz
+
+- All known _Drosophila_ virus sequences (from obbard lab).
+
+List_of_immune_genes_updated.csv
+
+- Curated immune gene in _Drosophila_. Data from Schlamp et al., 2020 study.
+
+NV_DAV.fa
+
+- Nora and Drosophila A virus sequences (From NCBI).
+
+NV_DAV.gtf
+
+- Annotation file corresponding to Nora and Drosophila A virus sequences (From NCBI).
+
+SoloTE_MU_replicate_1_only
+
+- SoloTE output of scRNA-seq counts for replicate 1 of mated bacterial uninfected (VU) flies.
+
+SoloTE_MU_replicate_2_only
+
+- scRNA-seq counts for replicate 2 of mated bacterial uninfected (VU) flies.
+
+SoloTE_VU_replicate_1_only
+
+- scRNA-seq counts for replicate 1 of virgin bacterial uninfected (VU) flies.
+
+SoloTE_VU_replicate_2_only
+
+- scRNA-seq counts for replicate 2 of virgin bacterial uninfected (VU) flies.
+
+VU_replicate_1_only
+
+- scRNA-seq counts for replicate 1 of virgin bacterial uninfected (VU) flies.
+
+VU_replicate_2_only
+
+- scRNA-seq counts for replicate 2 of virgin bacterial uninfected (VU) flies.
+
+VU1.depth
+
+- Per base read depth of Nora and Drosophila A virus in the virgin bacterial uninfected (VU) 1 sample, generated using samtools depth.
+
+VU2.depth
+
+- Per base read depth of Nora and Drosophila A virus in the virgin bacterial uninfected (VU) 2 sample, generated using samtools depth.
+
+VI1.depth
+
+- Per base read depth of Nora and Drosophila A virus in the virgin bacterial infected (VI) 1 sample, generated using samtools depth.
+
+VI2.depth
+
+- Per base read depth of Nora and Drosophila A virus in the virgin bacterial infected (VI) 2 sample, generated using samtools depth.
+
+MU1.depth
+
+- Per base read depth of Nora and Drosophila A virus in the mated bacterial uninfected (MU) 1 sample, generated using samtools depth.
+
+MU2.depth
+
+- Per base read depth of Nora and Drosophila A virus in the mated bacterial uninfected (MU) 2 sample, generated using samtools depth.
+
+MI1.depth
+
+- Per base read depth of Nora and Drosophila A virus in the mated bacterial infected (MI) 1 sample, generated using samtools depth.
+
+MI2.depth
+
+- Per base read depth of Nora and Drosophila A virus in the mated bacterial infected (MI) 2 sample, generated using samtools depth.
