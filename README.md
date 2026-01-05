@@ -1,6 +1,6 @@
 # Nora and Drosophila A virus tropism and host gene expression during infection at single-cell resolution in the _Drosophila_ fat body.
 
-Scripts Available:
+## Scripts:
 
 1_cpm_of_NV_DAV_in_different_treatments.R
 
@@ -123,7 +123,7 @@ Scripts Available:
 - Download TE annotation file for Drosophila
 - Getting TE counts by processing bam files produced by cellranger. Do it for bam flies of each sample.
 
-Data:
+## Data:
 
 combined_counts_all_treatments_VU_VI_MU_MI
 
