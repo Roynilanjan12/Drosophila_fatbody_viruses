@@ -1,0 +1,21 @@
+###to find which viruses are in the samples. Run these for each samples of Gupta et.al, (2022) study.
+bwa mem -t 16 Drosophila_Viruses.fas reads_R2.fastq.gz | samtools sort -@ 8 -o sample.sorted.bam 
+samtools index sample.sorted.bam
+samtools depth sample.sorted.bam > sample.depth
+
+###make the reference genome
+###adding virus genome to Drosophila genome to get viral+host gene expression count
+cat NV_DAV.fa >> dm6.fa
+cat NV_DAV.gtf >> dm6.refGene.gtf
+
+###make reference genome that can be used by cellranger. This will be used as "transcriptome".
+cellranger mkref --genome=dm6 --fasta=dm6.fa --genes=dm6.refGene.gtf
+
+###general command to get count matrix for each samples. Run these for each samples of Gupta et.al, (2022) study.
+cellranger count --id=Sample_name --fastqs /directory/of/fastq/flies --sample=fastq_sample_name --include-introns true --transcriptome /directory/of/transcriptome/flies
+
+###download TE annonation file for Drosophila
+python SoloTE_RepeatMasker_to_BED.py -g dm6
+
+###get TE counts by processing bam files produced by cellranger. Do it for bam flies of each samples
+python SoloTE_pipeline.py --threads 12 --bam /directory/of/cellranger/output/as/bam/file/possorted_genome_bam.bam --teannotation dm6_rmsk.bed --outputprefix output_name --outputdir /output/directory
