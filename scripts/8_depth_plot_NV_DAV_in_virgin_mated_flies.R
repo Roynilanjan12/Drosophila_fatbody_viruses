@@ -16,14 +16,14 @@ library(Seurat)
 
 ## Virgin Uninfected
 Virgin_Uninfected_1 <- read.table(
-  "/data/VU1.Depth",
+  "./data/VU1.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Virgin_Uninfected_1) <- c("Chr", "BP", "Depth")
 Virgin_Uninfected_1$Sample <- "VU1"
 
 Virgin_Uninfected_2 <- read.table(
-  "/data/VU2.Depth",
+  "./data/VU2.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Virgin_Uninfected_2) <- c("Chr", "BP", "Depth")
@@ -32,14 +32,14 @@ Virgin_Uninfected_2$Sample <- "VU2"
 
 ## Virgin Infected
 Virgin_Infected_1 <- read.table(
-  "/data/VI1.Depth",
+  "./data/VI1.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Virgin_Infected_1) <- c("Chr", "BP", "Depth")
 Virgin_Infected_1$Sample <- "VI1"
 
 Virgin_Infected_2 <- read.table(
-  "/data/VI2.Depth",
+  "./data/VI2.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Virgin_Infected_2) <- c("Chr", "BP", "Depth")
@@ -48,14 +48,14 @@ Virgin_Infected_2$Sample <- "VI2"
 
 ## Mated Uninfected
 Mated_Uninfected_1 <- read.table(
-  "/data/MU1.Depth",
+  "./data/MU1.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Mated_Uninfected_1) <- c("Chr", "BP", "Depth")
 Mated_Uninfected_1$Sample <- "MU1"
 
 Mated_Uninfected_2 <- read.table(
-  "/data/MU2.Depth",
+  "./data/MU2.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Mated_Uninfected_2) <- c("Chr", "BP", "Depth")
@@ -64,14 +64,14 @@ Mated_Uninfected_2$Sample <- "MU2"
 
 ## Mated Infected
 Mated_Infected_1 <- read.table(
-  "/data/MI1.Depth",
+  "./data/MI1.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Mated_Infected_1) <- c("Chr", "BP", "Depth")
 Mated_Infected_1$Sample <- "MI1"
 
 Mated_Infected_2 <- read.table(
-  "/data/MI2.Depth",
+  "./data/MI2.Depth",
   header = FALSE, sep = "\t", na.strings = "NA", dec = ".", strip.white = TRUE
 )
 colnames(Mated_Infected_2) <- c("Chr", "BP", "Depth")

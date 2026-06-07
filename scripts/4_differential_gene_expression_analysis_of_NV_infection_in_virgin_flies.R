@@ -19,8 +19,8 @@ library(monocle3)
 # ---- Load 10X Genomics count matrix ------------------------------------------------------
 # Reads a CellRanger-formatted feature-barcode matrix into R.
 # ----------------------------------------------------------------------------
-fatbody_v.data_v_1 <- Read10X(data.dir = "/data/VU_replicate_1_only/filtered_feature_bc_matrix")
-fatbody_v.data_v_2 <- Read10X(data.dir = "/data/VU_replicate_2_only/filtered_feature_bc_matrix")
+fatbody_v.data_v_1 <- Read10X(data.dir = "./data/VU_replicate_1_only/filtered_feature_bc_matrix")
+fatbody_v.data_v_2 <- Read10X(data.dir = "./data/VU_replicate_2_only/filtered_feature_bc_matrix")
 
 
 # ---- Create Seurat object (raw counts) ------------------------------------------------------
@@ -238,13 +238,13 @@ library(EnhancedVolcano)
 library(ggpubr)
 library(IDPmisc)
 
-volcano <- read_excel("/data/DEGs_VU1_vs_VU2.xlsx")
+volcano <- read_excel("./data/DEGs_VU1_vs_VU2.xlsx")
 volcano$gene <- gsub("JX220408\\.1-Nora-virus-isolate-FR1", "NV", volcano$gene)
 volcano <- as.data.frame(volcano)
 volcano$foldChanges <- as.numeric(volcano$foldChanges)
 go <- filter(volcano,padj<1e-05, abs(foldChanges)>0.5)
 
-immune_set <- read.csv("/data/List_of_immune_genes_updated.csv", header=T)
+immune_set <- read.csv("./data/List_of_immune_genes_updated.csv", header=T)
 immune_set$Gene <- immune_set$Symbol
 immune_go <- merge(go, immune_set, by = "Gene", all.x = TRUE)
 immune_go<-NaRV.omit(immune_go)

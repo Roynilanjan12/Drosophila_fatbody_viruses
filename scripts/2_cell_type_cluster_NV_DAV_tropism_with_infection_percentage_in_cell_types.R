@@ -17,7 +17,7 @@ library(Nebulosa)
 # ---- Load 10X Genomics count matrix ------------------------------------------------------
 # Reads a CellRanger-formatted feature-barcode matrix into R.
 # ----------------------------------------------------------------------------
-fatbody_v.data_v_1 <- Read10X(data.dir = "/data/combined_virgin_bacterial_uninfected_VU")
+fatbody_v.data_v_1 <- Read10X(data.dir = "./data/combined_virgin_bacterial_uninfected_VU")
 
 
 # ---- Create Seurat object (raw counts) ------------------------------------------------------
@@ -42,7 +42,7 @@ sdata.1 <- JoinLayers(sdata.1)
 # ---- Load 10X Genomics count matrix ------------------------------------------------------
 # Reads a CellRanger-formatted feature-barcode matrix into R.
 # ----------------------------------------------------------------------------
-fatbody_v.data_v_2 <- Read10X(data.dir = "/data/combined_mated_bacterial_uninfected_MU")
+fatbody_v.data_v_2 <- Read10X(data.dir = "./data/combined_mated_bacterial_uninfected_MU")
 
 
 # ---- Create Seurat object (raw counts) ------------------------------------------------------

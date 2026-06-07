@@ -123,11 +123,11 @@ library(IDPmisc)
 
 ### DAV in mated
 
-volcano <- read_excel("/data/DEGs_DAV_NV_mated_condition.xlsx", sheet = "DAV_MU")
+volcano <- read_excel("./data/DEGs_DAV_NV_mated_condition.xlsx", sheet = "DAV_MU")
 volcano <- as.data.frame(volcano)
 go <- filter(volcano,padj<0.05, abs(foldChanges)>0.5)
 
-immune_set <- read.csv("/data/List_of_immune_genes_updated.csv", header=T)
+immune_set <- read.csv("./data/List_of_immune_genes_updated.csv", header=T)
 immune_set$gene <- immune_set$Symbol
 immune_go <- merge(go, immune_set, by = "gene", all.x = TRUE)
 immune_go<-NaRV.omit(immune_go)
@@ -253,11 +253,11 @@ ggplot(data_plot2, aes(x = Score, y = Process, fill = Score)) +
 
 
 ## For NV in mated
-volcano <- read_excel("/data/DEGs_DAV_NV_mated_condition.xlsx", sheet = "NV_MU")
+volcano <- read_excel("./data/DEGs_DAV_NV_mated_condition.xlsx", sheet = "NV_MU")
 volcano <- as.data.frame(volcano)
 go <- filter(volcano,padj<0.05, abs(foldChanges)>0.5)
 
-immune_set <- read.csv("/data/List_of_immune_genes_updated.csv", header=T)
+immune_set <- read.csv("./data/List_of_immune_genes_updated.csv", header=T)
 immune_set$gene <- immune_set$Symbol
 immune_go <- merge(go, immune_set, by = "gene", all.x = TRUE)
 immune_go<-NaRV.omit(immune_go)

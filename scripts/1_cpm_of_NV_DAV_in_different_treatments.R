@@ -33,7 +33,7 @@ library(Nebulosa)
 # ---- Load 10X Genomics count matrix ------------------------------------------------------
 # Reads a CellRanger-formatted feature-barcode matrix into R.
 # ----------------------------------------------------------------------------
-fatbody_v.data_v <- Read10X(data.dir = "/data/combined_counts_all_treatments_VU_VI_MU_MI")
+fatbody_v.data_v <- Read10X(data.dir = "./data/combined_counts_all_treatments_VU_VI_MU_MI")
 
 # Initialize the Seurat object with the raw (non-normalized data).  Keep all
 # genes expressed in >= 3 cells (~0.1% of the data). Keep all cells with at

@@ -125,7 +125,7 @@ library(ComplexHeatmap)
 library(circlize)
 library(viridisLite)
 
-immune_set <- read.csv("/data/List_of_immune_genes_updated.csv", header=T)
+immune_set <- read.csv("./data/List_of_immune_genes_updated.csv", header=T)
 immune_set$gene <- immune_set$Symbol
 immune_go <- merge(sig_res_anova, immune_set, by = "gene", all.x = TRUE)
 immune_go<-NaRV.omit(immune_go)

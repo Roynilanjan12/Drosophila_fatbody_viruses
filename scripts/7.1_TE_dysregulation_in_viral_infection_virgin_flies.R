@@ -14,8 +14,8 @@ library(car)
 # ---- Load 10X Genomics count matrix ------------------------------------------------------
 # Reads a CellRanger-formatted feature-barcode matrix into R.
 # ----------------------------------------------------------------------------
-fatbody_v.data_v_1 <- Read10X(data.dir = "/data/SoloTE_VU_replicate_1_only")
-fatbody_v.data_v_2 <- Read10X(data.dir = "/data/SoloTE_VU_replicate_2_only")
+fatbody_v.data_v_1 <- Read10X(data.dir = "./data/SoloTE_VU_replicate_1_only")
+fatbody_v.data_v_2 <- Read10X(data.dir = "./data/SoloTE_VU_replicate_2_only")
 
 
 

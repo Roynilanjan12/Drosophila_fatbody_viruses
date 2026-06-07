@@ -10,8 +10,8 @@ library(readxl)
 library(SeuratWrappers)
 library(Nebulosa)
 
-fatbody_v.data_v_1 <- Read10X(data.dir = "/data/SoloTE_MU_replicate_1_only")
-fatbody_v.data_v_2 <- Read10X(data.dir = "/data/SoloTE_MU_replicate_2_only")
+fatbody_v.data_v_1 <- Read10X(data.dir = "./data/SoloTE_MU_replicate_1_only")
+fatbody_v.data_v_2 <- Read10X(data.dir = "./data/SoloTE_MU_replicate_2_only")
 
 # ---- Construct Seurat objects ----
 # Create per-replicate Seurat objects from count matrices; thresholds follow the manuscript QC.
