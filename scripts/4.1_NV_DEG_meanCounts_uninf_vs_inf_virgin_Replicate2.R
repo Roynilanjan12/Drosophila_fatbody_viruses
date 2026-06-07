@@ -1,4 +1,4 @@
-##Supplementary figure S16
+##Supplementary figure S21
 ###running 2_cell_type_cluster_NV_DAV_tropism_with_infection_percentage_in_cell_types.R script first
 
 # ---- Filter/subset cells or features ------------------------------------------------------
@@ -49,7 +49,7 @@ Mlc2_data$gene <- "Mlc2"
 levels(Mlc2_data$condition)
 Mlc2_data$condition <- factor(Mlc2_data$condition, levels = c('Uninfected cells', 'NV infected cells'))
 
-# Mlc2otting
+# Mlc2 potting
 
 # ---- Plotting with ggplot2 ------------------------------------------------------
 # ----------------------------------------------------------------------------

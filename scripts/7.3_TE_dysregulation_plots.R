@@ -1,5 +1,5 @@
-###figure 6, 7
-### Supplementary figure 27, 28
+###figure 5, 6
+### Supplementary figure 36, 37
 
 # ---- Load required R packages ----
 # Packages are loaded explicitly to make dependencies clear for reproduction.

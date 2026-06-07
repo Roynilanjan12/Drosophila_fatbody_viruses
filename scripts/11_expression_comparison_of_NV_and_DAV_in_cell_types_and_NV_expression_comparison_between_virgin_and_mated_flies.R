@@ -1,4 +1,4 @@
-## Supplementary figure S8, S9, S10, S11
+## Supplementary figure S10, S11, S12, S13
 
 ###running 2_cell_type_cluster_NV_DAV_tropism_with_infection_percentage_in_cell_types.R script first
 

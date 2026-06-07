@@ -1,5 +1,5 @@
-##Figure 4a
-##Supplementary figure S13, S14
+##Figure 3a
+##Supplementary figure S18, S19
 
 
 # ---- Dependencies ------------------------------------------------------

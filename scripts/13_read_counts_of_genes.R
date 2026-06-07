@@ -1,4 +1,4 @@
-##Supplementary figure S20, S21
+##Supplementary figure S26, S27
 ###running 2_cell_type_cluster_NV_DAV_tropism_with_infection_percentage_in_cell_types.R script first
 ###read_counts_in_virgin for NV
 # ---- Subsetting / filtering ----

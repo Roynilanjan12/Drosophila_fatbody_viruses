@@ -1,9 +1,8 @@
 ####Figure 1c,d,e and Figure 2a
-####Supplementary figure S3, S4, S5, S15, S17
+####Supplementary figure S4, S5, S7, S20, S23
 
 
 # ---- Dependencies ------------------------------------------------------
-# ----------------------------------------------------------------------------
 library(harmony)
 library(Seurat)
 library(tidyverse)
